@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="dist/css/styles.css">
+   
+   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+   </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+   <header class="header">
+      <nav class="pad pad-l pad-r flex flex-jc-sb flex-ai-c">
+         <!-- Logo -->
+         <a href="/" class="logo">
+            <img src="images/logo.svg" alt="loopstudios">
+         </a>
+         <!-- Mobile Menu Button -->
+         <a id="btnMenu" href="#" class="mobile-button">
+            <span></span>
+            <span></span>
+            <span></span>
+         </a>
 
-  Immersive experiences that deliver
+         <!-- Mobile menu links -->
+         <div class="header-mobile-links font-josefin pad pad-all hide">
+            <a href="#">About</a> 
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+         </div>
+      </nav>
+      <!-- Desktop Menu Links -->
+      <div class="header-desktop-links font-josefin hide">
+         <a href="#">About</a> 
+         <a href="#">Careers</a>
+         <a href="#">Events</a>
+         <a href="#">Products</a>
+         <a href="#">Support</a>
+      </div>
+      
+      <div class="header-motto font-josefin">
+         Immersive Experiences That Deliver
+      </div>
+   </header>
+   
+   <section class="interactive pad pad-all">
+      
+      <div class="interactive-image">
+         <img src="images/mobile/image-interactive.jpg" alt="Interactive">
+         <img src="images/desktop/image-interactive.jpg" class="hide" alt="Interactive">
+      </div>
 
-  The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
 
-  Our creations
+      <h1>The leader in interactive VR</h1>
+      
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+         projects for some of the best companies around the globe. Our award-winning 
+         creations have transformed businesses through digital experiences that bind 
+         to their brand.</p>
 
-  See all
+   </section>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+   <section class="creations">
+      Our creations
 
-  About
-  Careers
-  Events
-  Products
-  Support
+      See all
+    
+      Deep earth
+      Night arcade
+      Soccer team VR
+      The grid
+      From up above VR
+      Pocket borealis
+      The curiosity
+      Make it fisheye
+   </section>
 
-  © 2021 Loopstudios. All rights reserved.
+   <footer>
+      About
+      Careers
+      Events
+      Products
+      Support
+    
+      © 2021 Loopstudios. All rights reserved.
+   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+   <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/loopstudios-landing-page-Z2u4zh-CZ" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/dralm3ida/loopstudios" target="_blank">dralmeida</a>.
+   </div>
+
+   <script src="src/js/app.js"></script>
 </body>
 </html>

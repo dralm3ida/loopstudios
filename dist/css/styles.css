@@ -1,0 +1,187 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  color: black;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+body.open .header .logo {
+  z-index: 1;
+}
+
+body.open .header .mobile-button {
+  z-index: 1;
+}
+
+body.open .header .mobile-button > span:first-child {
+  transform: rotate(45deg);
+}
+
+body.open .header .mobile-button > span:nth-child(2) {
+  opacity: 0;
+}
+
+body.open .header .mobile-button > span:last-child {
+  transform: rotate(-45deg);
+}
+
+h1 {
+  margin-top: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+
+p {
+  margin-top: 1.5rem;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.pad-l {
+  padding-left: 2rem;
+}
+
+.pad-r {
+  padding-right: 2rem;
+}
+
+.pad-all {
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.header {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 486px;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 20em) {
+  .header {
+    max-height: 556px;
+  }
+}
+
+@media (min-width: 23.4375em) {
+  .header {
+    max-height: 650px;
+  }
+}
+
+@media (min-width: 26.5625em) {
+  .header {
+    max-height: 738px;
+  }
+}
+
+.header nav {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.header nav .mobile-button > span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: white;
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px;
+}
+
+.header nav .mobile-button > span:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.header-mobile-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 110vh;
+  width: 100%;
+  padding-top: 12.5rem;
+  background-color: black;
+}
+
+.header-mobile-links a {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.header-motto {
+  color: white;
+  border: 2px solid white;
+  margin: 7rem 2rem 0 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.interactive {
+  margin-top: 4rem;
+}
+
+.interactive img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

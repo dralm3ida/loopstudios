@@ -1,0 +1,7 @@
+$breakpoints-up: ("mobile-sm": $mobile-sm, "mobile-md": $mobile-md, "mobile-lg": $mobile-lg, "tablet": $tablet-size, "laptop": $laptop-size);
+
+@mixin break-up($key) {
+   @media (min-width: map-get($breakpoints-up, $key)){
+      @content;
+   }
+}
