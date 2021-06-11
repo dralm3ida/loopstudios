@@ -1,0 +1,40 @@
+.footer {
+   margin-top: 4rem;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   text-align: center;
+   color: $white;
+   background-color: $black;
+
+   &-logo {
+      display: block;
+
+      img {
+         width: 40%;
+      }
+   }
+
+   > a:not(:first-child){
+      display: block;
+      margin-top: 1rem;
+      color: $white;
+   }
+
+   &-share {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+
+      img {
+
+         margin-left: 0.5rem;
+         margin-right: 0.5rem;
+      }
+   }
+
+   &-copyright {
+      padding-top: 1rem;
+      color: $darkGray; 
+   }
+}

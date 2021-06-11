@@ -22,7 +22,7 @@ body {
    background-color: $white;
    overflow-x: hidden;
 
-   &.open {
+   &.mobile-menu {
       overflow: hidden;
       .header {
          .logo {
@@ -48,18 +48,18 @@ body {
 }
 
 h1 {
-   margin-top: 2rem;
+   margin: 2rem 0 2rem 0;
    font-family: 'Josefin Sans', sans-serif;
    font-weight: $josefin-weight;
-   font-size: $font-size-md;
+   font-size: $font-size-lg;
    text-transform: uppercase;
    text-align: center;
    color: $black;
 }
 
 p {
-   margin-top: 1.5rem;
-   color: $darkGray;
+   padding: 0.3125rem;
+   color: $veryDarkGray;
    text-align: center;
 }
 

@@ -23,32 +23,32 @@ body {
   overflow-x: hidden;
 }
 
-body.open {
+body.mobile-menu {
   overflow: hidden;
 }
 
-body.open .header .logo {
+body.mobile-menu .header .logo {
   z-index: 1;
 }
 
-body.open .header .mobile-button {
+body.mobile-menu .header .mobile-button {
   z-index: 1;
 }
 
-body.open .header .mobile-button > span:first-child {
+body.mobile-menu .header .mobile-button > span:first-child {
   transform: rotate(45deg);
 }
 
-body.open .header .mobile-button > span:nth-child(2) {
+body.mobile-menu .header .mobile-button > span:nth-child(2) {
   opacity: 0;
 }
 
-body.open .header .mobile-button > span:last-child {
+body.mobile-menu .header .mobile-button > span:last-child {
   transform: rotate(-45deg);
 }
 
 h1 {
-  margin-top: 2rem;
+  margin: 2rem 0 2rem 0;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-size: 1.875rem;
@@ -58,8 +58,8 @@ h1 {
 }
 
 p {
-  margin-top: 1.5rem;
-  color: #8c8c8c;
+  padding: 0.3125rem;
+  color: dimgray;
   text-align: center;
 }
 
@@ -183,5 +183,79 @@ a, a:visited, a:hover {
 
 .interactive img {
   width: 100%;
+}
+
+.creations-image {
+  position: relative;
+}
+
+.creations-image img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.creations-image-text {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  width: 40%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.creations-seeall {
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.creations-seeall a {
+  color: black;
+  border: 1px solid black;
+  padding: 0.375rem 2rem 0.375rem 2rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.footer-logo {
+  display: block;
+}
+
+.footer-logo img {
+  width: 40%;
+}
+
+.footer > a:not(:first-child) {
+  display: block;
+  margin-top: 1rem;
+  color: white;
+}
+
+.footer-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer-share img {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-copyright {
+  padding-top: 1rem;
+  color: #8c8c8c;
 }
 /*# sourceMappingURL=styles.css.map */
