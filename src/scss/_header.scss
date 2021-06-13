@@ -20,10 +20,23 @@
       max-height: 738px;
    }
 
+   @include break-up(laptop){
+      background-image: url('../../images/desktop/image-hero.jpg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+   }
+
    nav {
       position: relative;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
+      align-items: center;
+
+      @include break-up(laptop){
+         padding-top: 3.5rem;
+         padding-bottom: 3.5rem;
+         align-items: unset;
+      }
 
       .mobile-button {
 
@@ -60,6 +73,15 @@
       }
    }
 
+   &-desktop-links {
+      display: block;
+
+      a {
+         margin-left: 2rem;
+         color: $white;
+      }
+   }
+
    &-motto {
       color: $white;
       border: 2px solid $white;
@@ -69,5 +91,17 @@
       letter-spacing: 2px;
       line-height: 1.3;
       text-transform: uppercase;
+
+      @include break-up(laptop){
+         margin: 1rem 27.5rem 0 7.5rem;
+         padding: 1.5rem 2rem 1rem 2rem;
+         font-size: $font-size-xxlg;
+      }
+
+      @include break-up(desktop){
+         margin: 5rem 39rem 0 10rem;
+         padding: 1.5rem 2rem 1rem 2rem;
+         font-size: $font-size-xxxlg;
+      }
    }
 }

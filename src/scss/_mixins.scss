@@ -1,7 +1,15 @@
-$breakpoints-up: ("mobile-sm": $mobile-sm, "mobile-md": $mobile-md, "mobile-lg": $mobile-lg, "tablet": $tablet-size, "laptop": $laptop-size);
+$breakpoints-up: ("mobile-sm": $mobile-sm, "mobile-md": $mobile-md, "mobile-lg": $mobile-lg, "tablet": $tablet-size, "laptop": $laptop-size, "desktop": $desktop-size);
+
+$breakpoints-down: ("tablet": "63.9375em");
 
 @mixin break-up($key) {
    @media (min-width: map-get($breakpoints-up, $key)){
+      @content;
+   }
+}
+
+@mixin break-down($key) {
+   @media (max-width: map-get($breakpoints-down, $key)){
       @content;
    }
 }

@@ -67,8 +67,20 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
-.hide {
+.hide-mobile-menu {
   display: none;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .font-josefin {
@@ -80,8 +92,32 @@ a, a:visited, a:hover {
   padding-left: 2rem;
 }
 
+@media (min-width: 64em) {
+  .pad-l {
+    padding-left: 7.5rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .pad-l {
+    padding-left: 10rem;
+  }
+}
+
 .pad-r {
   padding-right: 2rem;
+}
+
+@media (min-width: 64em) {
+  .pad-r {
+    padding-right: 7.5rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .pad-r {
+    padding-right: 10rem;
+  }
 }
 
 .pad-all {
@@ -129,10 +165,27 @@ a, a:visited, a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .header {
+    background-image: url("../../images/desktop/image-hero.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
 .header nav {
   position: relative;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 64em) {
+  .header nav {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    align-items: unset;
+  }
 }
 
 .header nav .mobile-button > span {
@@ -166,6 +219,15 @@ a, a:visited, a:hover {
   margin-bottom: 2rem;
 }
 
+.header-desktop-links {
+  display: block;
+}
+
+.header-desktop-links a {
+  margin-left: 2rem;
+  color: white;
+}
+
 .header-motto {
   color: white;
   border: 2px solid white;
@@ -175,6 +237,22 @@ a, a:visited, a:hover {
   letter-spacing: 2px;
   line-height: 1.3;
   text-transform: uppercase;
+}
+
+@media (min-width: 64em) {
+  .header-motto {
+    margin: 1rem 27.5rem 0 7.5rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .header-motto {
+    margin: 5rem 39rem 0 10rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    font-size: 4rem;
+  }
 }
 
 .interactive {

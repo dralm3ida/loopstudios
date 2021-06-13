@@ -67,8 +67,20 @@ a, a:visited, a:hover {
    text-decoration: none;
 }
 
-.hide {
+.hide-mobile-menu {
    display: none;
+}
+
+.hide-for-mobile {
+   @include break-down(tablet){
+      display: none !important;
+   }
+}
+
+.hide-for-desktop {
+   @include break-up(laptop){
+      display: none;
+   }
 }
 
 .font-josefin {
@@ -79,9 +91,25 @@ a, a:visited, a:hover {
 .pad {
    &-l {
       padding-left: 2rem;
+
+      @include break-up(laptop){
+         padding-left: 7.5rem;
+      }
+
+      @include break-up(desktop){
+         padding-left: 10rem;
+      }
    }
    &-r {
       padding-right: 2rem;
+
+      @include break-up(laptop){
+         padding-right: 7.5rem;
+      }
+
+      @include break-up(desktop){
+         padding-right: 10rem;
+      }
    }
 
    &-all {
