@@ -1,13 +1,56 @@
 .interactive {
    margin-top: 4rem; // 160px
 
-   img {
-      width: 100%;
+   @include break-up(laptop){
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-areas: "image image image text text";
    }
-   
+
+   &-image {
+
+      @include break-up(laptop){
+         grid-area: image;
+         grid-column: 1 / span 13;
+      }
+
+      img {
+         width: 100%;
+      }
+   }
+
+   &-text {
+      @include break-up(laptop){
+         height: 60%;
+         padding: 1rem 0 0 2.5rem;
+         display: grid;
+         align-items: center;
+         grid-area: text;
+         grid-column: 11 / span 10;
+         align-self: end;
+         background-color: $white;
+      }
+
+      @include break-up(desktop){
+         padding: 3rem 0 0 5rem;
+      }
+   }
+}
+
+.creations-image-container {
+   @include break-up(laptop){
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+   }
 }
 
 .creations {
+
+   @include break-up(laptop){
+      position: relative;
+      margin-top: 4rem; // 160px
+   }
 
    &-image {
       position: relative;
@@ -15,11 +58,15 @@
       img {
          width: 100%;
          margin-bottom: 1rem;
+
+         @include break-up(laptop){
+            margin-bottom: unset;
+         }
       }
 
       &-text {
          position: absolute;
-         top: 40%;
+         bottom: 25%;
          left: 6%;
          width: 40%;
          font-family: 'Josefin Sans', sans-serif;
@@ -27,6 +74,16 @@
          font-size: $font-size-md;
          text-transform: uppercase;
          color: $white;
+
+         @include break-up(laptop){
+            bottom: 6%;
+            left: 10%;
+            width: 70%;
+         }
+
+         @include break-up(desktop){
+            width: 48%;
+         }
       }
    }
 
@@ -35,6 +92,18 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 3px;
+
+      @include break-up(laptop){
+         position: absolute;
+         top: 2.5rem;
+         right: 7rem;
+      }
+
+      @include break-up(desktop){
+         position: absolute;
+         top: 3.5rem;
+         right: 10rem;
+      }
       
       a {
          color: $black;

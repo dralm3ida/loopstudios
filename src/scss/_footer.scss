@@ -1,3 +1,17 @@
+.footer-container {
+   color: $white;
+
+   @include break-up(laptop){
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo share"
+                           "links copyright";
+      align-items: center;
+      gap: 1rem;
+   }
+}
+
 .footer {
    margin-top: 4rem;
    padding-top: 3rem;
@@ -6,25 +20,66 @@
    color: $white;
    background-color: $black;
 
+   @include break-up(laptop){
+      margin-top: 6rem;
+      padding: 3rem 7rem 3rem 7rem;
+      text-align: unset;
+   }
+
+   @include break-up(desktop){
+      margin-top: 6rem;
+      padding: 3rem 10rem 3rem 10rem;
+      text-align: unset;
+   }
+
    &-logo {
       display: block;
 
+      @include break-up(laptop){
+         grid-area: logo;
+      }
+
       img {
          width: 40%;
+
+         @include break-up(laptop){
+            width: 24%;
+         }
       }
    }
 
-   > a:not(:first-child){
-      display: block;
-      margin-top: 1rem;
-      color: $white;
+   &-links {
+
+      @include break-up(laptop){
+         grid-area: links;
+      }
+
+      > a {
+         display: block;
+         margin-top: 1rem;
+         color: $white;
+
+         @include break-up(laptop){
+            margin-right: 2rem;
+            display: unset;
+            margin-top: unset;
+         }
+      }
    }
+
+
 
    &-share {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 2rem;
+
+      @include break-up(laptop){
+         margin-top: unset;
+         grid-area: share;
+         justify-content: flex-end;
+      }
 
       img {
 
@@ -35,6 +90,12 @@
 
    &-copyright {
       padding-top: 1rem;
-      color: $darkGray; 
+      color: $darkGray;
+
+      @include break-up(laptop){
+         padding-top: unset;
+         grid-area: copyright;
+         justify-self: end;
+      }
    }
 }

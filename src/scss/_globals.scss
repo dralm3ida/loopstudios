@@ -55,12 +55,30 @@ h1 {
    text-transform: uppercase;
    text-align: center;
    color: $black;
+
+   @include break-up(laptop){
+      margin: 1rem 0 1rem 0;
+      text-align: unset;
+      font-size: $font-size-xlg;
+   }
+
+   @include break-up(desktop){
+      margin: 2rem 0 2rem 0;
+      text-align: unset;
+      font-size: $font-size-xxlg;
+   }
 }
 
 p {
    padding: 0.3125rem;
    color: $veryDarkGray;
    text-align: center;
+
+   @include break-up(laptop){
+      padding: unset;
+      text-align: unset;
+      color: $darkGray;
+   }
 }
 
 a, a:visited, a:hover {
@@ -93,7 +111,7 @@ a, a:visited, a:hover {
       padding-left: 2rem;
 
       @include break-up(laptop){
-         padding-left: 7.5rem;
+         padding-left: 7rem;
       }
 
       @include break-up(desktop){
@@ -104,7 +122,7 @@ a, a:visited, a:hover {
       padding-right: 2rem;
 
       @include break-up(laptop){
-         padding-right: 7.5rem;
+         padding-right: 7rem;
       }
 
       @include break-up(desktop){
@@ -114,6 +132,14 @@ a, a:visited, a:hover {
 
    &-all {
       padding: 2rem;
+
+      @include break-up(laptop){
+         padding: 2rem 7rem 2rem 7rem;
+      }
+
+      @include break-up(desktop){
+         padding: 2rem 10rem 2rem 10rem;
+      }
    }
 }
 

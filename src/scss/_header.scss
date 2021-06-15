@@ -21,9 +21,14 @@
    }
 
    @include break-up(laptop){
+      height: 58%;
       background-image: url('../../images/desktop/image-hero.jpg');
       background-size: 100% auto;
       background-repeat: no-repeat;
+   }
+
+   @include break-up(desktop){
+      height: 81%;
    }
 
    nav {
@@ -93,7 +98,7 @@
       text-transform: uppercase;
 
       @include break-up(laptop){
-         margin: 1rem 27.5rem 0 7.5rem;
+         margin: 1rem 27.5rem 0 7rem;
          padding: 1.5rem 2rem 1rem 2rem;
          font-size: $font-size-xxlg;
       }

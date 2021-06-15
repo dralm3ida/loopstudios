@@ -19,38 +19,40 @@
 </head>
 <body>
    <header class="header">
-      <nav class="pad pad-l pad-r flex flex-jc-sb">
-         <!-- Logo -->
-         <a href="/" class="logo">
-            <img src="images/logo.svg" alt="loopstudios">
-         </a>
-         <!-- Mobile Menu Button -->
-         <a id="btnMenu" href="#" class="mobile-button hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-         </a>
+      <div class="hero-background">
+         <nav class="pad pad-l pad-r flex flex-jc-sb">
+            <!-- Logo -->
+            <a href="/" class="logo">
+               <img src="images/logo.svg" alt="loopstudios">
+            </a>
+            <!-- Mobile Menu Button -->
+            <a id="btnMenu" href="#" class="mobile-button hide-for-desktop">
+               <span></span>
+               <span></span>
+               <span></span>
+            </a>
 
-         <!-- Mobile menu links -->
-         <div class="header-mobile-links font-josefin pad pad-all hide-for-desktop hide-mobile-menu">
-            <a href="#">About</a> 
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
+            <!-- Mobile menu links -->
+            <div class="header-mobile-links font-josefin pad pad-all hide-for-desktop hide-mobile-menu">
+               <a href="#">About</a> 
+               <a href="#">Careers</a>
+               <a href="#">Events</a>
+               <a href="#">Products</a>
+               <a href="#">Support</a>
+            </div>
+            <!-- Desktop Menu Links -->
+            <div class="header-desktop-links hide-for-mobile">
+               <a href="#">About</a> 
+               <a href="#">Careers</a>
+               <a href="#">Events</a>
+               <a href="#">Products</a>
+               <a href="#">Support</a>
+            </div>
+         </nav>
+         
+         <div class="header-motto font-josefin">
+            Immersive Experiences That Deliver
          </div>
-         <!-- Desktop Menu Links -->
-         <div class="header-desktop-links hide-for-mobile">
-            <a href="#">About</a> 
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
-         </div>
-      </nav>
-      
-      <div class="header-motto font-josefin">
-         Immersive Experiences That Deliver
       </div>
    </header>
    
@@ -61,65 +63,68 @@
          <img src="images/desktop/image-interactive.jpg" class="hide-for-mobile" alt="Interactive">
       </div>
 
-      <h1>The leader in interactive VR</h1>
+      <div class="interactive-text">
+         <h1>The leader in interactive VR</h1>
       
-      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
-         projects for some of the best companies around the globe. Our award-winning 
-         creations have transformed businesses through digital experiences that bind 
-         to their brand.</p>
+         <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.</p>
+      </div>
 
    </section>
 
    <section class="creations pad pad-all">
-      
       <h1>Our creations</h1>
       
-      <div class="creations-image">
-         <img src="images/mobile/image-deep-earth.jpg" class="hide-for-desktop" alt="Deep earth">
-         <img src="images/desktop/image-deep-earth.jpg" class="hide-for-mobile" alt="Deep earth">
-         <div class="creations-image-text">Deep earth</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-night-arcade.jpg" class="hide-for-desktop" alt="Night arcade">
-         <img src="images/desktop/image-night-arcade.jpg" class="hide-for-mobile" alt="Night arcade">
-         <div class="creations-image-text">Night arcade</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-soccer-team.jpg" class="hide-for-desktop" alt="Soccer team VR">
-         <img src="images/desktop/image-soccer-team.jpg" class="hide-for-mobile" alt="Soccer team VR">
-         <div class="creations-image-text">Soccer team VR</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-grid.jpg" class="hide-for-desktop" alt="The grid">
-         <img src="images/desktop/image-grid.jpg" class="hide-for-mobile" alt="The grid">
-         <div class="creations-image-text">The &nbsp; grid</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-from-above.jpg" class="hide-for-desktop" alt="From up above VR">
-         <img src="images/desktop/image-from-above.jpg" class="hide-for-mobile" alt="From up above VR">
-         <div class="creations-image-text">From up above VR</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-pocket-borealis.jpg" class="hide-for-desktop" alt="Pocket borealis">
-         <img src="images/desktop/image-pocket-borealis.jpg" class="hide-for-mobile" alt="Pocket borealis">
-         <div class="creations-image-text">Pocket borealis</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-curiosity.jpg" class="hide-for-desktop" alt="The curiosity">
-         <img src="images/desktop/image-curiosity.jpg" class="hide-for-mobile" alt="The curiosity">
-         <div class="creations-image-text">The curiosity</div>
-      </div>
-
-      <div class="creations-image">
-         <img src="images/mobile/image-fisheye.jpg" class="hide-for-desktop" alt="Make it fisheye">
-         <img src="images/desktop/image-fisheye.jpg" class="hide-for-mobile" alt="Make it fisheye">
-         <div class="creations-image-text">Make it fisheye</div>
+      <div class="creations-image-container">
+         <div class="creations-image">
+            <img src="images/mobile/image-deep-earth.jpg" class="hide-for-desktop" alt="Deep earth">
+            <img src="images/desktop/image-deep-earth.jpg" class="hide-for-mobile" alt="Deep earth">
+            <div class="creations-image-text">Deep earth</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-night-arcade.jpg" class="hide-for-desktop" alt="Night arcade">
+            <img src="images/desktop/image-night-arcade.jpg" class="hide-for-mobile" alt="Night arcade">
+            <div class="creations-image-text">Night arcade</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-soccer-team.jpg" class="hide-for-desktop" alt="Soccer team VR">
+            <img src="images/desktop/image-soccer-team.jpg" class="hide-for-mobile" alt="Soccer team VR">
+            <div class="creations-image-text">Soccer team VR</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-grid.jpg" class="hide-for-desktop" alt="The grid">
+            <img src="images/desktop/image-grid.jpg" class="hide-for-mobile" alt="The grid">
+            <div class="creations-image-text">The &nbsp; grid</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-from-above.jpg" class="hide-for-desktop" alt="From up above VR">
+            <img src="images/desktop/image-from-above.jpg" class="hide-for-mobile" alt="From up above VR">
+            <div class="creations-image-text">From up above VR</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-pocket-borealis.jpg" class="hide-for-desktop" alt="Pocket borealis">
+            <img src="images/desktop/image-pocket-borealis.jpg" class="hide-for-mobile" alt="Pocket borealis">
+            <div class="creations-image-text">Pocket borealis</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-curiosity.jpg" class="hide-for-desktop" alt="The curiosity">
+            <img src="images/desktop/image-curiosity.jpg" class="hide-for-mobile" alt="The curiosity">
+            <div class="creations-image-text">The curiosity</div>
+         </div>
+   
+         <div class="creations-image">
+            <img src="images/mobile/image-fisheye.jpg" class="hide-for-desktop" alt="Make it fisheye">
+            <img src="images/desktop/image-fisheye.jpg" class="hide-for-mobile" alt="Make it fisheye">
+            <div class="creations-image-text">Make it fisheye</div>
+         </div>
       </div>
     
       <div class="creations-seeall">
@@ -130,25 +135,30 @@
 
    <footer class="footer">
       
-      <a href="/" class="footer-logo">
-         <img src="images/logo.svg" alt="loopstudios">
-      </a>
+      <div class="footer-container">
+         <a href="/" class="footer-logo">
+            <img src="images/logo.svg" alt="loopstudios">
+         </a>
+   
+         <div class="footer-links">
+            <a href="#">About</a> 
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+         </div>
 
-      <a href="#">About</a> 
-      <a href="#">Careers</a>
-      <a href="#">Events</a>
-      <a href="#">Products</a>
-      <a href="#">Support</a>
-
-      <div class="footer-share">
-         <img src="images/icon-facebook.svg" alt="Facebook">
-         <img src="images/icon-twitter.svg" alt="Twitter">
-         <img src="images/icon-pinterest.svg" alt="Pinterest">
-         <img src="images/icon-instagram.svg" alt="Instagram">
+   
+         <div class="footer-share">
+            <img src="images/icon-facebook.svg" alt="Facebook">
+            <img src="images/icon-twitter.svg" alt="Twitter">
+            <img src="images/icon-pinterest.svg" alt="Pinterest">
+            <img src="images/icon-instagram.svg" alt="Instagram">
+         </div>
+       
+         <div class="footer-copyright">© 2021 Loopstudios. All rights reserved.</div>
       </div>
-    
-      <div class="footer-copyright">© 2021 Loopstudios. All rights reserved.</div>
-      
+
    </footer>
 
    <div class="attribution">
