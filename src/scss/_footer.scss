@@ -55,9 +55,28 @@
       }
 
       > a {
+         position: relative;
          display: block;
          margin-top: 1rem;
          color: $white;
+
+         &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            left: 25%;
+            right: 25%;
+            bottom: -15px;
+            background: $white;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+         }
+
+         &:hover {
+            &::before {
+               opacity: 1;
+            }
+         }
 
          @include break-up(laptop){
             margin-right: 2rem;
@@ -81,10 +100,29 @@
          justify-content: flex-end;
       }
 
-      img {
-
+      picture {
+         position: relative;
          margin-left: 0.5rem;
          margin-right: 0.5rem;
+         cursor: pointer;
+         
+         &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            background: $white;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+         }
+
+         &:hover {
+            &::before {
+               opacity: 1;
+            }
+         }
       }
    }
 

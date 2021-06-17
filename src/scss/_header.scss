@@ -82,8 +82,27 @@
       display: block;
 
       a {
+         position: relative;
          margin-left: 2rem;
          color: $white;
+
+         &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            left: 25%;
+            right: 25%;
+            bottom: -15px;
+            background: $white;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+         }
+
+         &:hover {
+            &::before {
+               opacity: 1;
+            }
+         }
       }
    }
 

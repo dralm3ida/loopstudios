@@ -267,8 +267,25 @@ a, a:visited, a:hover {
 }
 
 .header-desktop-links a {
+  position: relative;
   margin-left: 2rem;
   color: white;
+}
+
+.header-desktop-links a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 25%;
+  right: 25%;
+  bottom: -15px;
+  background: white;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header-desktop-links a:hover::before {
+  opacity: 1;
 }
 
 .header-motto {
@@ -357,6 +374,17 @@ a, a:visited, a:hover {
 
 .creations-image {
   position: relative;
+  cursor: pointer;
+}
+
+.creations-image:hover img {
+  opacity: 0.4;
+  transition: opacity 200ms ease-in-out;
+}
+
+.creations-image:hover .creations-image-text {
+  color: black;
+  transition: color 200ms ease-in-out;
 }
 
 .creations-image img {
@@ -398,6 +426,7 @@ a, a:visited, a:hover {
 
 .creations-seeall {
   margin-top: 1rem;
+  padding: 0.375rem 0 0.375rem 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -405,6 +434,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .creations-seeall {
+    margin-top: 0.625rem;
     position: absolute;
     top: 2.5rem;
     right: 7rem;
@@ -413,10 +443,21 @@ a, a:visited, a:hover {
 
 @media (min-width: 90em) {
   .creations-seeall {
+    margin-top: 1rem;
     position: absolute;
     top: 3.5rem;
     right: 10rem;
   }
+}
+
+.creations-seeall:hover {
+  background: black;
+  transition: background 200ms ease-in-out;
+}
+
+.creations-seeall:hover a {
+  color: white;
+  transition: color 200ms ease-in-out;
 }
 
 .creations-seeall a {
@@ -492,9 +533,26 @@ a, a:visited, a:hover {
 }
 
 .footer-links > a {
+  position: relative;
   display: block;
   margin-top: 1rem;
   color: white;
+}
+
+.footer-links > a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 25%;
+  right: 25%;
+  bottom: -15px;
+  background: white;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer-links > a:hover::before {
+  opacity: 1;
 }
 
 @media (min-width: 64em) {
@@ -520,9 +578,27 @@ a, a:visited, a:hover {
   }
 }
 
-.footer-share img {
+.footer-share picture {
+  position: relative;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-share picture::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background: white;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer-share picture:hover::before {
+  opacity: 1;
 }
 
 .footer-copyright {
